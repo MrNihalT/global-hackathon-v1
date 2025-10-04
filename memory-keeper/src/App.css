@@ -1,0 +1,158 @@
+/* Basic Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Main App Container */
+.app-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 16px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #6c6c6c;
+}
+
+/* Chat Bubbles and Container */
+.chat-container {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat-bubble {
+  padding: 10px 15px;
+  border-radius: 18px;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+.chat-bubble.model {
+  background-color: #e9eaf6;
+  color: #333;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+.chat-bubble.user {
+  background-color: #4a90e2;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+/* Message Input Form */
+.message-form {
+  display: flex;
+  gap: 10px;
+}
+
+.message-form input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.message-form input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  background-color: #4a90e2;
+  color: white;
+}
+
+button:hover:not(:disabled) {
+  background-color: #357ABD;
+}
+
+button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+/* Story Section */
+.story-section {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.story-section button {
+  background-color: #27ae60;
+  font-size: 1.1em;
+  padding: 14px 24px;
+}
+
+.story-section button:hover:not(:disabled) {
+  background-color: #219d53;
+}
+
+.story-result {
+  margin-top: 20px;
+  text-align: left;
+  background-color: #fffbeb;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #fceecb;
+}
+
+.story-result h2 {
+  margin-top: 0;
+  color: #d4a017;
+}
+
+.error-message {
+  margin-top: 15px;
+  color: #c0392b;
+  background-color: #fbeae5;
+  padding: 10px;
+  border-radius: 8px;
+}
