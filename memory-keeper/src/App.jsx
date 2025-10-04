@@ -6,7 +6,7 @@ import './App.css';
   // IMPORTANT: The API key is left as an empty string. 
   // In this secure environment, it's automatically provided during the API call.
   // This prevents exposing your key in the client-side code.
-  const API_KEY = "AIzaSyBD9iGPrIeBvwGOrQp2lpAVyfHOlahGLYU"; 
+  const API_KEY = ""; 
   const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${API_KEY}`;
 // The URL for the Google Gemini API
 
