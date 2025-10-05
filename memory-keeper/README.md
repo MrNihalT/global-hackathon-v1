@@ -1,3 +1,10 @@
+Live domo url
+https://memory-keeper-bice.vercel.app/
+
+youtub video linnk
+https://youtu.be/75sQio_FgmQ
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
